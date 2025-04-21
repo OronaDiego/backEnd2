@@ -1,5 +1,5 @@
-import { ProductModel } from "./models/product-model";
-import MongoDao from "./mongo-dao";
+import { ProductModel } from "./models/product-model.js";
+import MongoDao from "./mongo-dao.js";
 
 class ProductMongoDao extends MongoDao { 
     // mongo dao esta esperando el modelo y se lo paso a la clase padre con el super()
