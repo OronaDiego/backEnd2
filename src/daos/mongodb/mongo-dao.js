@@ -43,4 +43,8 @@ export default class MongoDao {
             throw new Error(error)
         }
     };
+    
+    getByEmail = async(email) => {
+        return await this.model.findOne({ email });
+    };
 }

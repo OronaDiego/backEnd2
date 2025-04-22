@@ -1,7 +1,6 @@
-import { productService } from '../services/product-service.js';
+import { userService } from "../services/user-service";
 
-
-class ProductController{
+class UserController{
     constructor(service){
         this.service = service;
     }
@@ -49,5 +48,4 @@ class ProductController{
         }
     };
 }
-
-export const productController = new ProductController(productService);
+export const userController = new UserController(userService);
